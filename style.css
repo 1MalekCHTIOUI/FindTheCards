@@ -1,0 +1,70 @@
+body {
+  background-color: rgb(25, 24, 26);
+}
+
+.container-fluid {
+  background-color: rgb(25, 24, 26);
+}
+
+.card-item {
+  background-color: rgba(221, 18, 79, 0.199);
+  color: rgb(221, 18, 79);
+  border: 1px solid rgb(221, 18, 79);
+  border-radius: 10px;
+  height: 350px;
+  cursor: pointer;
+  transition: 200ms;
+}
+.hidden {
+  display: none;
+}
+.shown {
+  display: block;
+}
+.card-item:hover {
+  scale: 1.1;
+  background-color: rgba(221, 18, 79, 0.13);
+  /* transform: rotateY(45deg); */
+}
+
+.show {
+  transform: rotateY(90deg);
+}
+
+.button-wrapper {
+  min-height: 90vh;
+}
+.button {
+  background-color: rgb(221, 18, 79);
+  border: 1px solid rgb(221, 18, 79);
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  transition: 200ms;
+  height: 10vh;
+  width: 30vh;
+  scale: 1;
+}
+.bounce {
+  animation: bounce 1s 0.3s;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    scale: 1;
+  }
+  50% {
+    transform: translateY(-8px);
+    scale: 1.1;
+  }
+  100% {
+    transform: translateY(0);
+    scale: 1;
+  }
+}
+
+.button:hover {
+  background-color: rgba(221, 18, 79, 0.199);
+  color: rgb(221, 18, 79);
+  border: 1px solid rgb(221, 18, 79);
+}
